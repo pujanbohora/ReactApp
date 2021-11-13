@@ -26,7 +26,6 @@ export default function About() {
             })
             setBtnText('Enable Dark mode')
         }
-        
     }
 
 

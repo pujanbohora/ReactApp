@@ -3,15 +3,15 @@ import './App.css';
 import Navbar from './components/Navbar';
 import TextForm from './components/TextForm';
 import Alert from './components/Alert';
-import About from './components/About';
+// import About from './components/About';
 import React, { useState } from 'react'; //imrs
 //React Router
-import {
-  BrowserRouter as Router,
-  Routes,
-  Route,
-  Link
-} from "react-router-dom";
+// import {
+//   BrowserRouter as Router,
+//   Routes,
+//   Route,
+//   Link
+// } from "react-router-dom";
 
 // import About from './components/About';
 
@@ -66,18 +66,19 @@ function App() {
     
   <>
 
-<Router>
+{/* <Router> */}
   <Navbar title="TextUtils" mode={mode} toogleMode={toogleMode}  RedMode={RedMode} redText={redText}/>
 
   <Alert alert={alert}/>
 
   <div className="container my-3">
-    <Routes>
-      <Route exact path="/about" element={<About />} />
-      <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Enter the text to analyze below" mode={mode}/>} />
-    </Routes>
+    {/* <Routes> */}
+      {/* <Route exact path="/about" element={<About />} /> */}
+      {/* <Route exact path="/" element={<TextForm showAlert={showAlert} heading="Enter the text to analyze below" mode={mode}/>} /> */}
+    {/* </Routes> */}
+    <TextForm showAlert={showAlert} heading="Enter the text to analyze below" mode={mode}/>
   </div>
-  </Router>
+  {/* </Router> */}
 
      
 
